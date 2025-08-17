@@ -4,7 +4,24 @@ using namespace std;
 
 // Function to process Organic Waste
 void processOrganicWaste() {
-    
+    char isOrganic;
+    cout << "Is the waste Organic? (y/n): ";
+    cin >> isOrganic;
+
+    if (isOrganic == 'y' || isOrganic == 'Y') {
+        char highEnergy;
+        cout << "Does it have High Energy content? (y/n): ";
+        cin >> highEnergy;
+
+        if (highEnergy == 'y' || highEnergy == 'Y') {
+            cout << "→ Processed into Biofuel" << endl;
+        } else {
+            cout << "→ Processed into Organic Fertilizer" << endl;
+        }
+    } else {
+        cout << "→ Not organic, sending to Reusable Waste process..." << endl;
+    }
+}
 }
 
 // Function to process Reusable Waste
