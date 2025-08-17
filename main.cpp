@@ -22,7 +22,7 @@ void processOrganicWaste() {
         cout << "→ Not organic, sending to Reusable Waste process..." << endl;
     }
 }
-}
+
 
 // Function to process Reusable Waste
 void processReusableWaste() {
@@ -36,12 +36,21 @@ void processReusableWaste() {
         cout << "→ Not reusable, sending to Recycling process..." << endl;
     }
 }
-}
+
 
 // Function to process Recyclable Waste
 void processRecyclableWaste() {
-   
+    char recyclable;
+    cout << "Is the waste recyclable? (y/n): ";
+    cin >> recyclable;
+
+    if (recyclable == 'y' || recyclable == 'Y') {
+        cout << "→ Recycled for other applications" << endl;
+    } else {
+        cout << "→ Sent to Landfill" << endl;
+    }
 }
+
 
 int main() {
     int choice;
