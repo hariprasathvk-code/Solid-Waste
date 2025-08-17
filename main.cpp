@@ -68,8 +68,8 @@ int main() {
         default: cout << "Invalid choice!" << endl;
     }
 
-    // Termination
-    cout << "\nTermination complete. Process ended." << endl;
+
+    cout << "\n Process ended." << endl;
 
     return 0;
 }
