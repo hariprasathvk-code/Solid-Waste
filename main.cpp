@@ -26,7 +26,16 @@ void processOrganicWaste() {
 
 // Function to process Reusable Waste
 void processReusableWaste() {
-    
+    char reusable;
+    cout << "Is the waste reusable? (y/n): ";
+    cin >> reusable;
+
+    if (reusable == 'y' || reusable == 'Y') {
+        cout << "→ Reuse for other applications" << endl;
+    } else {
+        cout << "→ Not reusable, sending to Recycling process..." << endl;
+    }
+}
 }
 
 // Function to process Recyclable Waste
